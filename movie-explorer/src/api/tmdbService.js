@@ -1,14 +1,18 @@
 import axios from "axios";
 
-const API_KEY = "d8801066a67cbf9344a6b8bc70b89817";
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
 export const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
-export const fetchPopularMovies = async () => {
+export const fetchPopularMovies = async (page = 1) => {
   const response = await axios.get(`${BASE_URL}/movie/popular`, {
-    params: { api_key: API_KEY, language: 'en-US' }
+    params: {
+      api_key: API_KEY,
+      language: 'en-US',
+      page: page,
+    },
   });
-  return response.data.results;
+  return response.data;
 };
 
 export const fetchMovieDetails = async (id) => {
