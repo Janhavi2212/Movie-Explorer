@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Movie Explorer 🍿
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application for discovering popular movies, built with React and Bootstrap. This app allows users to browse through an infinitely scrolling list of movies, search by title, filter by genre, and view details—all with a sleek dark/light theme toggle.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+**[https://harmonious-scone-df7a53.netlify.app/]**
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Infinite Scroll:** Smoothly loads more movies as the user scrolls to the bottom of the page, providing a seamless browsing experience.
+- **Real-time Search & Filter:** Instantly filters the currently loaded movies by title or genre using the intuitive header controls.
+- **Detailed Movie Information:** Click on any movie card to see a detailed view with its overview, rating, and an embedded YouTube trailer.
+- **Dark & Light Mode:** Switch between a sleek dark theme and a clean light theme using React's Context API for global state management.
+- **Responsive Design:** A mobile-first design using Bootstrap 5 ensures a great user experience on all devices, from phones to desktops.
+- **Dynamic UI:** The interface provides clear loading indicators and user-friendly error messages for a smooth experience during API calls.
+- **Secure API Key Handling**: Uses environment variables to keep the TMDb API key secure and out of the public repository.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project showcases a modern frontend stack and professional development practices:
 
-### `npm run build`
+- **[React](https://reactjs.org/)**: A JavaScript library for building user interfaces.
+- **[React Hooks](https://reactjs.org/docs/hooks-intro.html)**: Used for state and lifecycle features (`useState`, `useEffect`, `useMemo`, `useContext`, `useCallback`).
+- **[React Context API](https://reactjs.org/docs/context.html)**: For efficient global state management of the theme.
+- **[Bootstrap 5](https://getbootstrap.com/)**: For responsive design and pre-built UI components, customized with CSS variables for theming.
+- **[Axios](https://axios-http.com/)**: A promise-based HTTP client for making API requests to the TMDb API.
+- **[Netlify](https://www.netlify.com/)**: For continuous deployment and hosting.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running, follow these simple steps.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js (v14 or later)
+- npm or yarn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/Janhavi2212/Movie-Explorer.git
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd Movie-Explorer
+    ```
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+4.  **Set up your Environment Variables:**
+    This project requires an API key from The Movie Database (TMDb).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    - Create a new file named `.env` in the **root** of the project directory.
+    - Add the following line to the `.env` file, replacing `your_api_key_here` with your actual key. **The variable name must start with `REACT_APP_`**.
+      ```
+      REACT_APP_TMDB_API_KEY=your_api_key_here
+      ```
+    - You can get a free API key by creating an account at [TMDb](https://www.themoviedb.org/signup).
 
-## Learn More
+5.  **Run the application:**
+    ```sh
+    npm start
+    ```
+    The app will open automatically in your browser at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 API Credits
 
-### Code Splitting
+This project uses the [TMDb API](https://www.themoviedb.org/documentation/api) but is not endorsed or certified by TMDb.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
