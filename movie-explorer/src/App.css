@@ -1,0 +1,23 @@
+.app-container {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.movie-card-hover {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: var(--bs-dark-bg-subtle);
+  border: 1px solid var(--bs-border-color-translucent);
+}
+
+.movie-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+/* 
+const API_KEY = "d8801066a67cbf9344a6b8bc70b89817" */
